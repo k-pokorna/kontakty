@@ -41,6 +41,7 @@ h1 {
 	border-radius: 50%;
 }
 
+
 @media screen and (min-width: 540px) {
 	.kontakty {
 		display: flex;
@@ -49,12 +50,34 @@ h1 {
 	}
 
 	.kontakt {
-		flex: 0 0 calc((100% - 30px) / 2)
+		display: flex;
+		flex: 0 1 calc((100% - 20px) / 2);
+		text-align: left;
+		gap: 20px;
+	}
+
+	.kontakt img {
+		width: 70px;
+	}
+
+	.kontakt h2 {
+		margin-top: 10px;
 	}
 }
 
+
 @media screen and (min-width: 960px) {
 	.kontakt {
-		flex: 0 0 calc((100% - 30px) / 4)
+		flex: 0 0 calc((100% - 20px) / 4);
+		display: block;
+		text-align: center;
+	}
+
+	.kontakt img {
+		width: 128px;
+	}
+
+	.kontakt h2 {
+		margin-top: 17px;
 	}
 }
